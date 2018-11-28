@@ -29,7 +29,7 @@ public class EmployeeService {
         return new ArrayList<Employee>(employees.values());
     }
     public static Employee create(Employee employee) {
-        idIndex += idIndex;
+        idIndex ++;
         employee.setId(idIndex);
         employees.put(idIndex, employee);
         return employee;
